@@ -8,7 +8,7 @@ export default function Comprar () {
 
 
     const  [list , setList] = useState( getCartList() )
-    
+    const urlBase = 'http://127.0.0.1:8080'
     cleanCartList()
 
     if(list.length === 0) {
@@ -35,7 +35,7 @@ export default function Comprar () {
           <div className='juguete' key={index}>
             <h2>{juguete.name}</h2>
             <p>{juguete.description}</p>
-            <img src={juguete.image} alt={juguete.name} />
+            <img src={urlBase + juguete.image.substring(8)} alt={juguete.name} />
             <button 
                 onClick={() => 
                     setList(list.filter((item) => item.id !== juguete.id))
