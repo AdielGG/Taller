@@ -2,11 +2,12 @@ import NavBar from '../components/NavBar'
 import '../styles/home.css'
 
 export default function HomePage () {
+  const imgUrl = "img/carritofondo.png";
     return (
       <div className='home-container'>
         <NavBar />
-        <h1>Home</h1>
-        <p>Esta es una página de ejemplo para crear un React Router desde cero</p>
+        <h1>Bienvenidos a la tienda de juguetes</h1>
+        <img src='img/portada.jpg' alt='tienda' style={{ width: '100%' }} />
       </div>
     )
   }

@@ -1,8 +1,9 @@
 import NavBar from "../components/NavBar";
 import "../styles/about.css";
+import "../styles/home.css";
 
 
-export default function HomePage () {
+export default function AboutPage () {
   const imgUrl = "img/github.png";
 
     return (

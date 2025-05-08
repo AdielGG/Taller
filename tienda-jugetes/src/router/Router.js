@@ -5,7 +5,7 @@ import HomePage from "../pages/Home";
 import ProductPage from "../pages/Products";
 import AboutPage from "../pages/About";
 import NotFoundPage from "../pages/NotFound";
-
+import ComprarPage from "../pages/Comprar";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/products/:id",
     Component: ProductPage
+  },
+  {
+    path: "/comprar",
+    Component: ComprarPage
   },
   {
     path: "/about",

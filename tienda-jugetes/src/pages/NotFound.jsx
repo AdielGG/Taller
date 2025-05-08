@@ -1,16 +1,16 @@
-import { useState } from 'react'
 import router from '../router/Router'
+import "../styles/home.css";
 
 export default function Page404 () {
     
     return (
-      <>
-        <div className='center-content'>
+      
+        <div className='home-container'>
           <h1>404 - Página no encontrada</h1>
-          <p>La página que estás buscando no existe</p>
-          <img src='img/404.gif' alt='404' style={{ width: '100%' }} />
-          <button onClick={() => router.navigate('/') }>Volver al inicio</button>
+          <h2>La página que estás buscando no existe <button onClick={() => router.navigate('/') }>Volver al inicio</button></h2>
+          <img src='img/404.gif' alt='404' style={{ width: '40%' }} />
+          
         </div>
-      </>
+    
     )
   }
