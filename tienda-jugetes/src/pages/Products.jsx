@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../styles/juguetes.css'
 import Juguete from '../components/Juguete'
-
+import NavBar from '../components/NavBar'
 
 export default function ProductPage () {
     const [search ,setSearch] = useState('')
@@ -55,8 +55,8 @@ export default function ProductPage () {
     }
 
     return (
-      <>
-        <h1>Juguetes</h1>
+      <div className='home-container'>
+        <NavBar />
         <div className='search-container'>
           <input type='text' placeholder='Buscar juguetes'  value={search} onChange={e => setSearch(e.target.value)} />
           <button onClick={limpiar}>Limpiar</button>
@@ -67,11 +67,13 @@ export default function ProductPage () {
         <div className='juge-container'>
           {juguetes.map((juguete, index) => (
             <Juguete juguete={juguete} key={index} />
+              
+            
             
             ))}
             {juguetes.length === 0 && <h2>No hay juguetes que coincidan con tu búsqueda</h2>}
         </div>
 
-      </>
+      </div>
     )
   }

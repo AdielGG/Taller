@@ -5,6 +5,7 @@
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .juguete {
@@ -50,8 +51,7 @@
 }
 
 .search-container input {
-    max-width: 50%;
-    width: 100%;
+    width: 30rem;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
