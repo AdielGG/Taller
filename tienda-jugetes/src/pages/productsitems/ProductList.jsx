@@ -64,9 +64,6 @@ export default function ProductList () {
         <div className='juge-container'>
           {juguetes.map((juguete, index) => (
             <Juguete juguete={juguete} key={index} />
-              
-            
-            
             ))}
             {juguetes.length === 0 && <h2>No hay juguetes que coincidan con tu búsqueda</h2>}
         </div>

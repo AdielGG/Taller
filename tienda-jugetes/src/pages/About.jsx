@@ -21,7 +21,7 @@ export default function AboutPage () {
             </h3>
             <img src={imgUrl} alt="github"  width={20} height={20} />
             
-            <a href="https://github.com/adelgroero" target="_blank">
+            <a href="https://github.com/AdielGG/Taller" target="_blank">
               tienda-jugetes-react
             </a>
           </div>

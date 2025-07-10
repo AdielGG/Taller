@@ -1,5 +1,4 @@
 import '../../styles/juguetes.css'
-import router from '../../router/Router'
 import { useProductDispatch } from "./ProductContext"
 
 export default function Juguete ({ juguete }) {
